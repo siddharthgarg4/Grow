@@ -27,9 +27,7 @@
 		<string>audio</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>ExploreViewController</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
