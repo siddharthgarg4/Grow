@@ -8,23 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C694223425B900E0C172 /* AppDelegate.swift */; };
-		1D54C697223425B900E0C172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C696223425B900E0C172 /* ViewController.swift */; };
-		1D54C69A223425B900E0C172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C698223425B900E0C172 /* Main.storyboard */; };
 		1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */; };
 		1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C69E223425BB00E0C172 /* Assets.xcassets */; };
-		1D54C6A2223425BB00E0C172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C6A0223425BB00E0C172 /* LaunchScreen.storyboard */; };
+		1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C6AF223438C900E0C172 /* ExploreViewController.swift */; };
+		1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C6B0223438C900E0C172 /* ExploreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D54C691223425B900E0C172 /* EcoHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D54C694223425B900E0C172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D54C696223425B900E0C172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D54C699223425B900E0C172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D54C69C223425B900E0C172 /* EcoHack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EcoHack.xcdatamodel; sourceTree = "<group>"; };
 		1D54C69E223425BB00E0C172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D54C6A1223425BB00E0C172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D54C6A3223425BB00E0C172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D54C6A92234297300E0C172 /* EcoHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EcoHack.entitlements; sourceTree = "<group>"; };
+		1D54C6AF223438C900E0C172 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		1D54C6B0223438C900E0C172 /* ExploreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +56,22 @@
 			isa = PBXGroup;
 			children = (
 				1D54C6A92234297300E0C172 /* EcoHack.entitlements */,
+				1D54C6AA2234351900E0C172 /* Xibs */,
 				1D54C694223425B900E0C172 /* AppDelegate.swift */,
-				1D54C696223425B900E0C172 /* ViewController.swift */,
-				1D54C698223425B900E0C172 /* Main.storyboard */,
 				1D54C69E223425BB00E0C172 /* Assets.xcassets */,
-				1D54C6A0223425BB00E0C172 /* LaunchScreen.storyboard */,
 				1D54C6A3223425BB00E0C172 /* Info.plist */,
 				1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */,
+				1D54C6AF223438C900E0C172 /* ExploreViewController.swift */,
+				1D54C6B0223438C900E0C172 /* ExploreViewController.xib */,
 			);
 			path = EcoHack;
+			sourceTree = "<group>";
+		};
+		1D54C6AA2234351900E0C172 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D54C6A2223425BB00E0C172 /* LaunchScreen.storyboard in Resources */,
+				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
 				1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */,
-				1D54C69A223425B900E0C172 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,32 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */,
 				1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */,
-				1D54C697223425B900E0C172 /* ViewController.swift in Sources */,
 				1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1D54C698223425B900E0C172 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D54C699223425B900E0C172 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1D54C6A0223425BB00E0C172 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D54C6A1223425BB00E0C172 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D54C6A4223425BB00E0C172 /* Debug */ = {
