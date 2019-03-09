@@ -24,6 +24,7 @@
 		1D54C69E223425BB00E0C172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D54C6A1223425BB00E0C172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D54C6A3223425BB00E0C172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D54C6A92234297300E0C172 /* EcoHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EcoHack.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		1D54C693223425B900E0C172 /* EcoHack */ = {
 			isa = PBXGroup;
 			children = (
+				1D54C6A92234297300E0C172 /* EcoHack.entitlements */,
 				1D54C694223425B900E0C172 /* AppDelegate.swift */,
 				1D54C696223425B900E0C172 /* ViewController.swift */,
 				1D54C698223425B900E0C172 /* Main.storyboard */,
@@ -99,6 +101,14 @@
 				TargetAttributes = {
 					1D54C690223425B900E0C172 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -286,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EcoHack/EcoHack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6T5AT36D6;
 				INFOPLIST_FILE = EcoHack/Info.plist;
@@ -296,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = greenDreamTeam.EcoHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EcoHack/EcoHack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6T5AT36D6;
 				INFOPLIST_FILE = EcoHack/Info.plist;
@@ -314,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = greenDreamTeam.EcoHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
