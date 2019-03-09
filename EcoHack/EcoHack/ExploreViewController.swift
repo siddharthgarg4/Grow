@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ARKit
 
 class ExploreViewController: UIViewController {
 
