@@ -10,6 +10,8 @@
 		1D3F6C4422344932008B1AC3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F6C4322344932008B1AC3 /* Launch Screen.storyboard */; };
 		1D3F6C4722345219008B1AC3 /* ArScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F6C4522345219008B1AC3 /* ArScannerViewController.swift */; };
 		1D3F6C4822345219008B1AC3 /* ArScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F6C4622345219008B1AC3 /* ArScannerViewController.xib */; };
+		1D3F6C4B223464A6008B1AC3 /* CompanyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F6C49223464A6008B1AC3 /* CompanyInformationViewController.swift */; };
+		1D3F6C4C223464A6008B1AC3 /* CompanyInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F6C4A223464A6008B1AC3 /* CompanyInformationViewController.xib */; };
 		1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C694223425B900E0C172 /* AppDelegate.swift */; };
 		1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */; };
 		1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C69E223425BB00E0C172 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		1D3F6C4322344932008B1AC3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1D3F6C4522345219008B1AC3 /* ArScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArScannerViewController.swift; path = Xibs/ArScannerViewController.swift; sourceTree = "<group>"; };
 		1D3F6C4622345219008B1AC3 /* ArScannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArScannerViewController.xib; sourceTree = "<group>"; };
+		1D3F6C49223464A6008B1AC3 /* CompanyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInformationViewController.swift; sourceTree = "<group>"; };
+		1D3F6C4A223464A6008B1AC3 /* CompanyInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyInformationViewController.xib; sourceTree = "<group>"; };
 		1D54C691223425B900E0C172 /* EcoHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D54C694223425B900E0C172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D54C69C223425B900E0C172 /* EcoHack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EcoHack.xcdatamodel; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 				1D54C69E223425BB00E0C172 /* Assets.xcassets */,
 				1D54C6A3223425BB00E0C172 /* Info.plist */,
 				1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */,
+				1D3F6C49223464A6008B1AC3 /* CompanyInformationViewController.swift */,
 				1D3F6C4522345219008B1AC3 /* ArScannerViewController.swift */,
 				1D54C6AF223438C900E0C172 /* ExploreViewController.swift */,
 				1D3F6C4322344932008B1AC3 /* Launch Screen.storyboard */,
@@ -77,6 +82,7 @@
 		1D54C6AA2234351900E0C172 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				1D3F6C4A223464A6008B1AC3 /* CompanyInformationViewController.xib */,
 				1D3F6C4622345219008B1AC3 /* ArScannerViewController.xib */,
 				1D54C6B0223438C900E0C172 /* ExploreViewController.xib */,
 			);
@@ -151,6 +157,7 @@
 			files = (
 				1D3F6C4822345219008B1AC3 /* ArScannerViewController.xib in Resources */,
 				1D3F6C4422344932008B1AC3 /* Launch Screen.storyboard in Resources */,
+				1D3F6C4C223464A6008B1AC3 /* CompanyInformationViewController.xib in Resources */,
 				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
 				1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */,
 			);
@@ -166,6 +173,7 @@
 				1D3F6C4722345219008B1AC3 /* ArScannerViewController.swift in Sources */,
 				1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */,
 				1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */,
+				1D3F6C4B223464A6008B1AC3 /* CompanyInformationViewController.swift in Sources */,
 				1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

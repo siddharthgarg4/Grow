@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArScannerViewController" customModule="EcoHack" customModuleProvider="target">
             <connections>
+                <outlet property="camScanner" destination="Jfh-g7-1AC" id="aAP-2F-8eJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="lWs-Ik-NTT"/>
             </connections>
         </placeholder>
