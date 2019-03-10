@@ -20,6 +20,11 @@ class CompanyExploreViewController: UIViewController, UICollectionViewDelegate, 
         companyCollection.dataSource = self
         let nibCell = UINib(nibName: cellIdentifier, bundle: nil)
         companyCollection.register(nibCell, forCellWithReuseIdentifier: cellIdentifier)
+        let headerView = UINib(nibName: "ExploreHeaderView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+        companyCollection.addSubview(headerView)
+        companyCollection.contentInset.top = 180
+        headerView.frame = CGRect(x: 0,y: -180, width: companyCollection.frame.size.width, height: 0)
+        
 
         // Do any additional setup after loading the view.
     }
