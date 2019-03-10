@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyInformationViewController" customModule="EcoHack" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyInformationViewController" customModule="Grow" customModuleProvider="target">
             <connections>
                 <outlet property="companyLabel" destination="Xdq-9p-V4y" id="tTo-GQ-2aj"/>
                 <outlet property="descriptionLabel" destination="INv-fw-dao" id="2JM-a3-2qU"/>
@@ -87,6 +87,7 @@
                         <constraint firstItem="XOJ-3d-RLc" firstAttribute="top" secondItem="7MC-X8-Xf0" secondAttribute="top" constant="18" id="bmb-3c-2fo"/>
                         <constraint firstItem="4hz-Jt-WjE" firstAttribute="centerX" secondItem="UGX-fe-9hj" secondAttribute="centerX" id="cA1-sd-cxN"/>
                         <constraint firstAttribute="width" constant="315" id="foN-12-uZe"/>
+                        <constraint firstAttribute="bottom" secondItem="4hz-Jt-WjE" secondAttribute="bottom" constant="20" id="goy-LR-Pa8"/>
                         <constraint firstAttribute="height" constant="318" id="jnI-xw-cNR"/>
                         <constraint firstItem="4hz-Jt-WjE" firstAttribute="centerX" secondItem="INv-fw-dao" secondAttribute="centerX" id="ubs-vv-l9w"/>
                         <constraint firstItem="UGX-fe-9hj" firstAttribute="top" secondItem="INv-fw-dao" secondAttribute="bottom" constant="19" id="w2D-Np-3Oi"/>
