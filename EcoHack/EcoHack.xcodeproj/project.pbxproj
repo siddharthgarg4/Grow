@@ -21,6 +21,7 @@
 		578D3244223456FB0050A84E /* Company.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D3242223456FB0050A84E /* Company.xib */; };
 		578D32472234574F0050A84E /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D32452234574F0050A84E /* Onboarding.swift */; };
 		578D32482234574F0050A84E /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D32462234574F0050A84E /* Onboarding.xib */; };
+		578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578D324F2234DFB30050A84E /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		578D3242223456FB0050A84E /* Company.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Company.xib; sourceTree = "<group>"; };
 		578D32452234574F0050A84E /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		578D32462234574F0050A84E /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
+		578D324F2234DFB30050A84E /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		1D54C693223425B900E0C172 /* EcoHack */ = {
 			isa = PBXGroup;
 			children = (
+				578D324E2234DF790050A84E /* fonts */,
 				1D54C6A92234297300E0C172 /* EcoHack.entitlements */,
 				1D54C6AA2234351900E0C172 /* Xibs */,
 				1D54C694223425B900E0C172 /* AppDelegate.swift */,
@@ -99,6 +102,14 @@
 				578D323E223456000050A84E /* Profile.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		578D324E2234DF790050A84E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				578D324F2234DFB30050A84E /* Nunito-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			files = (
 				1D3F6C4822345219008B1AC3 /* ArScannerViewController.xib in Resources */,
 				1D3F6C4422344932008B1AC3 /* Launch Screen.storyboard in Resources */,
+				578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */,
 				578D3240223456000050A84E /* Profile.xib in Resources */,
 				578D3244223456FB0050A84E /* Company.xib in Resources */,
 				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
