@@ -19,6 +19,8 @@
 		1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C6B0223438C900E0C172 /* ExploreViewController.xib */; };
 		1DB0043D2234C77E00E247B6 /* challengePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0043C2234C77E00E247B6 /* challengePopUp.xib */; };
 		1DB0043F2234C99B00E247B6 /* challengePopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0043E2234C99B00E247B6 /* challengePopUpView.swift */; };
+		578D3258223509EA0050A84E /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D3257223509EA0050A84E /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		578D325A22350A210050A84E /* LogoClassifierV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 578D325922350A210050A84E /* LogoClassifierV2.mlmodel */; };
 		5A4A04F0EE0C0F0561784DD0 /* Pods_EcoHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED622F4310EBBC6B2BD83F9A /* Pods_EcoHack.framework */; };
 		578D323F223456000050A84E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D323D223456000050A84E /* Profile.swift */; };
 		578D3240223456000050A84E /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D323E223456000050A84E /* Profile.xib */; };
@@ -46,6 +48,8 @@
 		1DB0043C2234C77E00E247B6 /* challengePopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = challengePopUp.xib; sourceTree = "<group>"; };
 		1DB0043E2234C99B00E247B6 /* challengePopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challengePopUpView.swift; sourceTree = "<group>"; };
 		3BB0B59C647045D4B60578B1 /* Pods-EcoHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoHack/Pods-EcoHack.release.xcconfig"; sourceTree = "<group>"; };
+		578D3257223509EA0050A84E /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		578D325922350A210050A84E /* LogoClassifierV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LogoClassifierV2.mlmodel; sourceTree = "<group>"; };
 		8FC63A2104B45FCD4491FB26 /* Pods-EcoHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoHack/Pods-EcoHack.debug.xcconfig"; sourceTree = "<group>"; };
 		ED622F4310EBBC6B2BD83F9A /* Pods_EcoHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D323D223456000050A84E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				578D32452234574F0050A84E /* Onboarding.swift */,
 				578D323D223456000050A84E /* Profile.swift */,
 				1D3F6C4322344932008B1AC3 /* Launch Screen.storyboard */,
+				578D3257223509EA0050A84E /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				578D325922350A210050A84E /* LogoClassifierV2.mlmodel */,
 			);
 			path = EcoHack;
 			sourceTree = "<group>";
@@ -157,7 +163,7 @@
 				1D54C68D223425B900E0C172 /* Sources */,
 				1D54C68E223425B900E0C172 /* Frameworks */,
 				1D54C68F223425B900E0C172 /* Resources */,
-				55A6F78580187DA01057DB46 /* [CP] Embed Pods Frameworks */,
+				DE75B3F1F721A3D66699EFA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,30 +236,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55A6F78580187DA01057DB46 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EcoHack/Pods-EcoHack-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EcoHack/Pods-EcoHack-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BEDBA1C2B0295770F4F343CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +258,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DE75B3F1F721A3D66699EFA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoHack/Pods-EcoHack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoHack/Pods-EcoHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,10 +292,12 @@
 				1D3F6C4722345219008B1AC3 /* ArScannerViewController.swift in Sources */,
 				578D323F223456000050A84E /* Profile.swift in Sources */,
 				1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */,
+				578D3258223509EA0050A84E /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				1DB0043F2234C99B00E247B6 /* challengePopUpView.swift in Sources */,
 				578D32472234574F0050A84E /* Onboarding.swift in Sources */,
 				1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */,
 				1D3F6C4B223464A6008B1AC3 /* CompanyInformationViewController.swift in Sources */,
+				578D325A22350A210050A84E /* LogoClassifierV2.mlmodel in Sources */,
 				1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */,
 				578D3243223456FB0050A84E /* Company.swift in Sources */,
 			);
@@ -420,14 +428,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U6T5AT36D6;
+				DEVELOPMENT_TEAM = 4FUHJ3U2M8;
 				INFOPLIST_FILE = EcoHack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = greenDreamTeam.EcoHack;
+				PRODUCT_BUNDLE_IDENTIFIER = greenDreamTeam.grow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -440,14 +448,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U6T5AT36D6;
+				DEVELOPMENT_TEAM = 4FUHJ3U2M8;
 				INFOPLIST_FILE = EcoHack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = greenDreamTeam.EcoHack;
+				PRODUCT_BUNDLE_IDENTIFIER = greenDreamTeam.grow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

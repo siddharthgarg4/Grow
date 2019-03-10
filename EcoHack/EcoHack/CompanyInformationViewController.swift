@@ -12,6 +12,10 @@ import TinyConstraints
 
 class CompanyInformationViewController: UIViewController {
 
+    var _companyLabel:String = ""
+    var _descriptionLabel:String = ""
+    var _numberEndorsements: Int = 0
+    
     @IBOutlet weak var endorseButton: UIButton!
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var ratingStars: CosmosView!
@@ -22,6 +26,9 @@ class CompanyInformationViewController: UIViewController {
         super.viewDidLoad()
         endorseButton.layer.borderWidth = 1
         endorseButton.layer.borderColor = UIColor(red:0.47, green:0.47, blue:0.47, alpha:1.0).cgColor
+        
+        companyLabel.text = _companyLabel
+        descriptionLabel.text = _descriptionLabel
     }
 
 }
