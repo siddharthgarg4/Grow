@@ -1,5 +1,5 @@
 //
-//  CompanyCollectionViewCell.swift
+//  CollectionViewCell.swift
 //  EcoHack
 //
 //  Created by Siddharth Garg on 2019-03-10.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CompanyCollectionViewCell: UICollectionViewCell {
-    
+class CollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var companyInfo: UIView!
     @IBOutlet weak var companyImage: UIImageView!
-    @IBOutlet weak var informationView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var descriptionCompany: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -21,17 +21,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X95-Ds-9uT">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X95-Ds-9uT">
                     <rect key="frame" x="214" y="0.0" width="200" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-kq-SO0">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-kq-SO0">
                             <rect key="frame" x="140" y="0.0" width="60" height="105"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.70980392156862748" green="0.53333333333333333" blue="0.38039215686274508" alpha="0.12" colorSpace="calibratedRGB"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.85490196078431369" green="0.38823529411764707" blue="0.2627450980392157" alpha="0.12" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Bgw-kq-SO0" firstAttribute="top" secondItem="X95-Ds-9uT" secondAttribute="top" id="PqT-EO-KDm"/>
+                        <constraint firstItem="Bgw-kq-SO0" firstAttribute="leading" secondItem="X95-Ds-9uT" secondAttribute="leading" constant="140" id="i9g-pR-Rrg"/>
+                        <constraint firstAttribute="bottom" secondItem="Bgw-kq-SO0" secondAttribute="bottom" constant="-55" id="rNM-Hz-1D4"/>
+                        <constraint firstAttribute="trailing" secondItem="Bgw-kq-SO0" secondAttribute="trailing" id="vSl-qM-Dqb"/>
+                    </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unW-ov-u1m">
                     <rect key="frame" x="35" y="45" width="128" height="50"/>
@@ -52,7 +56,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="oQO-jM-IVv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="0sy-Xw-lvN"/>
+                <constraint firstItem="X95-Ds-9uT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4Uk-lQ-FiA"/>
                 <constraint firstItem="unW-ov-u1m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="6aC-DK-NeY"/>
+                <constraint firstItem="X95-Ds-9uT" firstAttribute="leading" secondItem="unW-ov-u1m" secondAttribute="trailing" constant="51" id="DSV-mk-FRy"/>
+                <constraint firstItem="oQO-jM-IVv" firstAttribute="top" secondItem="X95-Ds-9uT" secondAttribute="bottom" constant="47" id="Esy-wz-aXm"/>
+                <constraint firstAttribute="trailing" secondItem="X95-Ds-9uT" secondAttribute="trailing" id="HBp-3D-G52"/>
                 <constraint firstItem="oQO-jM-IVv" firstAttribute="top" secondItem="unW-ov-u1m" secondAttribute="bottom" constant="2" id="VHH-SF-Cx7"/>
                 <constraint firstItem="unW-ov-u1m" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="45" id="aXj-Hf-Em0"/>
             </constraints>
