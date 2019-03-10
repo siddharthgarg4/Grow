@@ -10,21 +10,25 @@ import UIKit
 
 class Company: UIViewController {
 
+    @IBOutlet weak var imageScroll: UIScrollView!
+    var images = [UIImage]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        images = [#imageLiteral(resourceName: "9Afcb3F653D742F99593Abafaa216739"),#imageLiteral(resourceName: "consciousbychloePelaCaseCompostableBiodegradablePlasticFreeZeroWastePhoneCase13"), #imageLiteral(resourceName: "consciousbychloePelaCaseCompostableBiodegradablePlasticFreeZeroWastePhoneCase61"), #imageLiteral(resourceName: "consciousbychloePelaCaseCompostableBiodegradablePlasticFreeZeroWastePhoneCase11")]
+        
+        for i in 0..<images.count {
+            let imageView = UIImageView()
+            let x = self.view.frame.size.width * CGFloat(i)
+            imageView.frame = CGRect(x: x, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = images[i]
+            
+            imageScroll.contentSize.width = imageScroll.frame.size.width * CGFloat(i + 1)
+            imageScroll.addSubview(imageView)
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

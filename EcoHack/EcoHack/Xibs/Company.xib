@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Company" customModule="EcoHack" customModuleProvider="target">
             <connections>
+                <outlet property="imageScroll" destination="UEI-xv-3iY" id="is6-OB-67a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,16 +21,75 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-LS-qc8">
-                    <rect key="frame" x="171" y="438" width="73" height="21"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-QT-mHE">
+                    <rect key="frame" x="28" y="44" width="34" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="0.2470588235" green="0.35686274509999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3r-Zv-yCZ">
+                    <rect key="frame" x="216" y="0.0" width="198" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLV-hd-Rzi">
+                            <rect key="frame" x="136" y="0.0" width="62" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.70980392160000005" green="0.53333333329999999" blue="0.3803921569" alpha="0.12" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.38823529410000002" blue="0.26274509800000001" alpha="0.12" colorSpace="calibratedRGB"/>
+                </view>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPl-E7-XkZ">
+                    <rect key="frame" x="20" y="501" width="374" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Here at Pela we have a big, hairy audacious goal.  We want to create a waste free future.
+
+We believe that the technology exists to make everyday products without everyday waste. This is why we are developing products made of environmentally sensible materials. To educate and inspire the global community of people who are committed to making a positive impact on our planet.</string>
+                    <color key="textColor" red="0.2470588235" green="0.35686274509999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="About Us" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="615-P2-1jr">
+                    <rect key="frame" x="20" y="447" width="374" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.2470588235" green="0.35686274509999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pela Cases" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKE-b5-xoy">
+                    <rect key="frame" x="20" y="97" width="175" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="36"/>
+                    <color key="textColor" red="0.2470588235" green="0.35686274509999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Shop our products " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euw-cS-4fo">
+                    <rect key="frame" x="20" y="740" width="175" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.2470588235" green="0.35686274509999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynl-IX-xao">
+                    <rect key="frame" x="86" y="806" width="250" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                    <state key="normal" title="Endorse">
+                        <color key="titleColor" red="0.2470588235" green="0.35686274509999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UEI-xv-3iY">
+                    <rect key="frame" x="0.0" y="157" width="414" height="282"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
         </view>
     </objects>
 </document>
