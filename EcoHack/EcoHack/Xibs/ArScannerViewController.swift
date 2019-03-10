@@ -22,20 +22,22 @@ class ArScannerViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        camScanner.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
-        //config.planeDetection = .vertical
-        camScanner.session.run(config)
-        camScanner.delegate = self
-        let popUp = SCNPlane(width: 0.1, height: 0.1)
-        popUp.firstMaterial?.diffuse.contents = companyInfo.view
-        let popUpNode = SCNNode(geometry: popUp)
-        popUpNode.position = SCNVector3(0.1, 0.1, -0.1)
-        camScanner.scene.rootNode.addChildNode(popUpNode)
         
         let timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true, block: { timer in
             let image = self.camScanner.snapshot()
             self.updateClassifications(for: image)
         })
+        
+        camScanner.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        //config.planeDetection = .vertical
+        camScanner.session.run(config)
+        camScanner.delegate = self
+//        let popUp = SCNPlane(width: 0.1, height: 0.1)
+//        popUp.firstMaterial?.diffuse.contents = companyInfo.view
+//        let popUpNode = SCNNode(geometry: popUp)
+//        popUpNode.position = SCNVector3(0.1, 0.1, -0.1)
+//        camScanner.scene.rootNode.addChildNode(popUpNode)
+    
     }
     
     
@@ -96,13 +98,33 @@ class ArScannerViewController: UIViewController, ARSCNViewDelegate {
                 print("Nothing recognized.")
             } else {
                 // Display top classifications ranked by confidence in the UI.
-                let topClassifications = classifications.prefix(2)
+                let topClassifications = classifications.prefix(1)
                 let descriptions = topClassifications.map { classification in
                     // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
-                    return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
+                    return String(format: "%.2f)%@", classification.confidence, classification.identifier)
                 }
                 print("Classification:\n" + descriptions.joined(separator: "\n"))
+                
+                let confidence = descriptions[0].prefix(3)
+                let title = descriptions[0].dropFirst(5)
+
+                let data = (String(confidence), String(title))
+                self.determineLogo(company: data)
             }
+        }
+    }
+    func determineLogo (company: (String, String)) {
+        print("data: ", company)
+        if(Double(company.0)! > 0.85 && company.1 != "logo_none") {
+            
+            let popUp = SCNPlane(width: 0.1, height: 0.1)
+            popUp.firstMaterial?.diffuse.contents = companyInfo.view
+            let popUpNode = SCNNode(geometry: popUp)
+            popUpNode.position = SCNVector3(0.1, 0.1, -0.1)
+            camScanner.scene.rootNode.addChildNode(popUpNode)
+            
+            
+            companyInfo._companyLabel = company.1
         }
     }
 }
