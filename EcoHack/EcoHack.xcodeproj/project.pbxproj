@@ -15,6 +15,13 @@
 		1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C69E223425BB00E0C172 /* Assets.xcassets */; };
 		1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C6AF223438C900E0C172 /* ExploreViewController.swift */; };
 		1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C6B0223438C900E0C172 /* ExploreViewController.xib */; };
+		578D323F223456000050A84E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D323D223456000050A84E /* Profile.swift */; };
+		578D3240223456000050A84E /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D323E223456000050A84E /* Profile.xib */; };
+		578D3243223456FB0050A84E /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D3241223456FB0050A84E /* Company.swift */; };
+		578D3244223456FB0050A84E /* Company.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D3242223456FB0050A84E /* Company.xib */; };
+		578D32472234574F0050A84E /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D32452234574F0050A84E /* Onboarding.swift */; };
+		578D32482234574F0050A84E /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D32462234574F0050A84E /* Onboarding.xib */; };
+		578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578D324F2234DFB30050A84E /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		1D54C6A92234297300E0C172 /* EcoHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EcoHack.entitlements; sourceTree = "<group>"; };
 		1D54C6AF223438C900E0C172 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		1D54C6B0223438C900E0C172 /* ExploreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
+		578D323D223456000050A84E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		578D323E223456000050A84E /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
+		578D3241223456FB0050A84E /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		578D3242223456FB0050A84E /* Company.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Company.xib; sourceTree = "<group>"; };
+		578D32452234574F0050A84E /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		578D32462234574F0050A84E /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
+		578D324F2234DFB30050A84E /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 		1D54C693223425B900E0C172 /* EcoHack */ = {
 			isa = PBXGroup;
 			children = (
+				578D324E2234DF790050A84E /* fonts */,
 				1D54C6A92234297300E0C172 /* EcoHack.entitlements */,
 				1D54C6AA2234351900E0C172 /* Xibs */,
 				1D54C694223425B900E0C172 /* AppDelegate.swift */,
@@ -68,7 +83,10 @@
 				1D54C6A3223425BB00E0C172 /* Info.plist */,
 				1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */,
 				1D3F6C4522345219008B1AC3 /* ArScannerViewController.swift */,
+				578D3241223456FB0050A84E /* Company.swift */,
 				1D54C6AF223438C900E0C172 /* ExploreViewController.swift */,
+				578D32452234574F0050A84E /* Onboarding.swift */,
+				578D323D223456000050A84E /* Profile.swift */,
 				1D3F6C4322344932008B1AC3 /* Launch Screen.storyboard */,
 			);
 			path = EcoHack;
@@ -78,9 +96,20 @@
 			isa = PBXGroup;
 			children = (
 				1D3F6C4622345219008B1AC3 /* ArScannerViewController.xib */,
+				578D3242223456FB0050A84E /* Company.xib */,
 				1D54C6B0223438C900E0C172 /* ExploreViewController.xib */,
+				578D32462234574F0050A84E /* Onboarding.xib */,
+				578D323E223456000050A84E /* Profile.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		578D324E2234DF790050A84E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				578D324F2234DFB30050A84E /* Nunito-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +180,11 @@
 			files = (
 				1D3F6C4822345219008B1AC3 /* ArScannerViewController.xib in Resources */,
 				1D3F6C4422344932008B1AC3 /* Launch Screen.storyboard in Resources */,
+				578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */,
+				578D3240223456000050A84E /* Profile.xib in Resources */,
+				578D3244223456FB0050A84E /* Company.xib in Resources */,
 				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
+				578D32482234574F0050A84E /* Onboarding.xib in Resources */,
 				1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,9 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D3F6C4722345219008B1AC3 /* ArScannerViewController.swift in Sources */,
+				578D323F223456000050A84E /* Profile.swift in Sources */,
 				1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */,
+				578D32472234574F0050A84E /* Onboarding.swift in Sources */,
 				1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */,
 				1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */,
+				578D3243223456FB0050A84E /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
