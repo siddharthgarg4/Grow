@@ -11,7 +11,7 @@ import UIKit
 class Onboarding: UIViewController {
 
     @IBAction func Skip(_ sender: Any) {
-        present(ExploreViewController(), animated: true, completion: nil)
+        present(Company(), animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
