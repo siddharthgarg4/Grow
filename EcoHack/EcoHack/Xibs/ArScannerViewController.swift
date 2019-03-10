@@ -13,8 +13,8 @@ class ArScannerViewController: UIViewController, ARSCNViewDelegate {
 
     
     @IBOutlet weak var camScanner: ARSCNView!
-    let config = ARWorldTrackingConfiguration()
-    private let companyInfo = CompanyInformationViewController()
+    lazy var config = ARWorldTrackingConfiguration()
+    private var companyInfo = CompanyInformationViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
