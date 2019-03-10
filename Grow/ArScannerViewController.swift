@@ -20,6 +20,20 @@ class ArScannerViewController: UIViewController, ARSCNViewDelegate {
     lazy var config = ARWorldTrackingConfiguration()
     private var companyInfo = CompanyInformationViewController()
     
+    
+    
+    @IBAction func challengeButton(_ sender: Any) {
+        self.navigationController?.pushViewController(Profile(), animated: true)
+    }
+    
+    @IBAction func profileButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func exploreButton(_ sender: Any) {
+        self.navigationController?.pushViewController(CompanyExploreViewController(), animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
