@@ -20,6 +20,13 @@
 		1DB0043D2234C77E00E247B6 /* challengePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0043C2234C77E00E247B6 /* challengePopUp.xib */; };
 		1DB0043F2234C99B00E247B6 /* challengePopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0043E2234C99B00E247B6 /* challengePopUpView.swift */; };
 		5A4A04F0EE0C0F0561784DD0 /* Pods_EcoHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED622F4310EBBC6B2BD83F9A /* Pods_EcoHack.framework */; };
+		578D323F223456000050A84E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D323D223456000050A84E /* Profile.swift */; };
+		578D3240223456000050A84E /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D323E223456000050A84E /* Profile.xib */; };
+		578D3243223456FB0050A84E /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D3241223456FB0050A84E /* Company.swift */; };
+		578D3244223456FB0050A84E /* Company.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D3242223456FB0050A84E /* Company.xib */; };
+		578D32472234574F0050A84E /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D32452234574F0050A84E /* Onboarding.swift */; };
+		578D32482234574F0050A84E /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D32462234574F0050A84E /* Onboarding.xib */; };
+		578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578D324F2234DFB30050A84E /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,13 @@
 		3BB0B59C647045D4B60578B1 /* Pods-EcoHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoHack/Pods-EcoHack.release.xcconfig"; sourceTree = "<group>"; };
 		8FC63A2104B45FCD4491FB26 /* Pods-EcoHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoHack/Pods-EcoHack.debug.xcconfig"; sourceTree = "<group>"; };
 		ED622F4310EBBC6B2BD83F9A /* Pods_EcoHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		578D323D223456000050A84E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		578D323E223456000050A84E /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
+		578D3241223456FB0050A84E /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		578D3242223456FB0050A84E /* Company.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Company.xib; sourceTree = "<group>"; };
+		578D32452234574F0050A84E /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		578D32462234574F0050A84E /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
+		578D324F2234DFB30050A84E /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,7 @@
 		1D54C693223425B900E0C172 /* EcoHack */ = {
 			isa = PBXGroup;
 			children = (
+				578D324E2234DF790050A84E /* fonts */,
 				1D54C6A92234297300E0C172 /* EcoHack.entitlements */,
 				1D54C6AA2234351900E0C172 /* Xibs */,
 				1D54C694223425B900E0C172 /* AppDelegate.swift */,
@@ -85,7 +100,10 @@
 				1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */,
 				1D3F6C49223464A6008B1AC3 /* CompanyInformationViewController.swift */,
 				1D3F6C4522345219008B1AC3 /* ArScannerViewController.swift */,
+				578D3241223456FB0050A84E /* Company.swift */,
 				1D54C6AF223438C900E0C172 /* ExploreViewController.swift */,
+				578D32452234574F0050A84E /* Onboarding.swift */,
+				578D323D223456000050A84E /* Profile.swift */,
 				1D3F6C4322344932008B1AC3 /* Launch Screen.storyboard */,
 			);
 			path = EcoHack;
@@ -96,8 +114,11 @@
 			children = (
 				1D3F6C4A223464A6008B1AC3 /* CompanyInformationViewController.xib */,
 				1D3F6C4622345219008B1AC3 /* ArScannerViewController.xib */,
+				578D3242223456FB0050A84E /* Company.xib */,
 				1D54C6B0223438C900E0C172 /* ExploreViewController.xib */,
 				1DB0043C2234C77E00E247B6 /* challengePopUp.xib */,
+				578D32462234574F0050A84E /* Onboarding.xib */,
+				578D323E223456000050A84E /* Profile.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -117,6 +138,12 @@
 				ED622F4310EBBC6B2BD83F9A /* Pods_EcoHack.framework */,
 			);
 			name = Frameworks;
+		578D324E2234DF790050A84E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				578D324F2234DFB30050A84E /* Nunito-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +217,12 @@
 				1D3F6C4822345219008B1AC3 /* ArScannerViewController.xib in Resources */,
 				1D3F6C4422344932008B1AC3 /* Launch Screen.storyboard in Resources */,
 				1D3F6C4C223464A6008B1AC3 /* CompanyInformationViewController.xib in Resources */,
-				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
 				1DB0043D2234C77E00E247B6 /* challengePopUp.xib in Resources */,
+				578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */,
+				578D3240223456000050A84E /* Profile.xib in Resources */,
+				578D3244223456FB0050A84E /* Company.xib in Resources */,
+				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
+				578D32482234574F0050A84E /* Onboarding.xib in Resources */,
 				1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,11 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D3F6C4722345219008B1AC3 /* ArScannerViewController.swift in Sources */,
+				578D323F223456000050A84E /* Profile.swift in Sources */,
 				1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */,
 				1DB0043F2234C99B00E247B6 /* challengePopUpView.swift in Sources */,
+				578D32472234574F0050A84E /* Onboarding.swift in Sources */,
 				1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */,
 				1D3F6C4B223464A6008B1AC3 /* CompanyInformationViewController.swift in Sources */,
 				1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */,
+				578D3243223456FB0050A84E /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
