@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArScannerViewController" customModule="EcoHack" customModuleProvider="target">
             <connections>
+                <outlet property="camScanner" destination="Jfh-g7-1AC" id="aAP-2F-8eJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="lWs-Ik-NTT"/>
             </connections>
         </placeholder>
@@ -20,36 +21,51 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jfh-g7-1AC">
-                    <rect key="frame" x="0.0" y="20" width="414" height="876"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfh-g7-1AC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </arscnView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo7-kj-ukd">
-                    <rect key="frame" x="186" y="448" width="43" height="21"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="scannerBox" translatesAutoresizingMaskIntoConstraints="NO" id="kcs-Zs-CZO">
+                    <rect key="frame" x="64.5" y="318" width="285" height="305"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="285" id="V1v-Zo-1Or"/>
+                        <constraint firstAttribute="height" constant="305" id="ZvN-gC-5QA"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7b-5e-WuQ">
+                    <rect key="frame" x="354" y="820" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krF-w8-54i">
-                    <rect key="frame" x="317" y="832" width="77" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Challenges"/>
+                    <state key="normal" backgroundImage="profile"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed1-8N-z3t">
-                    <rect key="frame" x="20" y="832" width="52" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6C-IE-J0i">
+                    <rect key="frame" x="177" y="810" width="60" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Explore"/>
+                    <state key="normal" backgroundImage="camera"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb9-Ld-wBW">
-                    <rect key="frame" x="180" y="832" width="54" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLn-Y3-twN">
+                    <rect key="frame" x="20" y="820" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Camera"/>
+                    <state key="normal" backgroundImage="search">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kcs-Zs-CZO" firstAttribute="centerX" secondItem="Jfh-g7-1AC" secondAttribute="centerX" id="HSm-Xk-9ty"/>
+                <constraint firstItem="kcs-Zs-CZO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="274" id="Mjv-Qr-KXq"/>
+                <constraint firstItem="Jfh-g7-1AC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QqK-Jq-1ms"/>
+                <constraint firstItem="Jfh-g7-1AC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RQY-47-R1l"/>
+                <constraint firstAttribute="trailing" secondItem="Jfh-g7-1AC" secondAttribute="trailing" id="azV-dP-p4f"/>
+                <constraint firstAttribute="bottom" secondItem="Jfh-g7-1AC" secondAttribute="bottom" id="yko-s5-ELE"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="52.173913043478265" y="47.544642857142854"/>
         </view>
     </objects>
+    <resources>
+        <image name="camera" width="64" height="64"/>
+        <image name="profile" width="40" height="40"/>
+        <image name="scannerBox" width="286" height="305"/>
+        <image name="search" width="39" height="39"/>
+    </resources>
 </document>
