@@ -22,7 +22,7 @@ class Company: UIViewController {
     var imageArray = [UIImage]()
     
     @IBAction func backBtn(_ sender: Any) {
-        present(ArScannerViewController(), animated: true, completion: nil)
+        present(ExploreViewController(), animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

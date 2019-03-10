@@ -15,8 +15,9 @@
 		1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C69E223425BB00E0C172 /* Assets.xcassets */; };
 		1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C6AF223438C900E0C172 /* ExploreViewController.swift */; };
 		1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D54C6B0223438C900E0C172 /* ExploreViewController.xib */; };
-		1DB004412234D49B00E247B6 /* CompanyCollectionCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB004402234D49B00E247B6 /* CompanyCollectionCellView.xib */; };
-		1DB004432234E09F00E247B6 /* CompanyCollectionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB004422234E09F00E247B6 /* CompanyCollectionCellView.swift */; };
+		1DB004462234F18800E247B6 /* CompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB004442234F18800E247B6 /* CompanyCollectionViewCell.swift */; };
+		1DB004492235010800E247B6 /* CompanyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB004482235010800E247B6 /* CompanyCollectionViewCell.xib */; };
+		1DB0044B22350D5A00E247B6 /* ExploreHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0044A22350D5A00E247B6 /* ExploreHeaderView.xib */; };
 		578D323F223456000050A84E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D323D223456000050A84E /* Profile.swift */; };
 		578D3240223456000050A84E /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578D323E223456000050A84E /* Profile.xib */; };
 		578D3243223456FB0050A84E /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D3241223456FB0050A84E /* Company.swift */; };
@@ -38,8 +39,9 @@
 		1D54C6A92234297300E0C172 /* EcoHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EcoHack.entitlements; sourceTree = "<group>"; };
 		1D54C6AF223438C900E0C172 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		1D54C6B0223438C900E0C172 /* ExploreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
-		1DB004402234D49B00E247B6 /* CompanyCollectionCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyCollectionCellView.xib; sourceTree = "<group>"; };
-		1DB004422234E09F00E247B6 /* CompanyCollectionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCollectionCellView.swift; sourceTree = "<group>"; };
+		1DB004442234F18800E247B6 /* CompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DB004482235010800E247B6 /* CompanyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyCollectionViewCell.xib; sourceTree = "<group>"; };
+		1DB0044A22350D5A00E247B6 /* ExploreHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreHeaderView.xib; sourceTree = "<group>"; };
 		578D323D223456000050A84E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		578D323E223456000050A84E /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
 		578D3241223456FB0050A84E /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 				1D54C69B223425B900E0C172 /* EcoHack.xcdatamodeld */,
 				1D3F6C4522345219008B1AC3 /* ArScannerViewController.swift */,
 				578D3241223456FB0050A84E /* Company.swift */,
-				1DB004422234E09F00E247B6 /* CompanyCollectionCellView.swift */,
+				1DB004442234F18800E247B6 /* CompanyCollectionViewCell.swift */,
 				1D54C6AF223438C900E0C172 /* ExploreViewController.swift */,
 				578D32452234574F0050A84E /* Onboarding.swift */,
 				578D323D223456000050A84E /* Profile.swift */,
@@ -102,10 +104,11 @@
 			children = (
 				1D3F6C4622345219008B1AC3 /* ArScannerViewController.xib */,
 				578D3242223456FB0050A84E /* Company.xib */,
+				1DB0044A22350D5A00E247B6 /* ExploreHeaderView.xib */,
+				1DB004482235010800E247B6 /* CompanyCollectionViewCell.xib */,
 				1D54C6B0223438C900E0C172 /* ExploreViewController.xib */,
 				578D32462234574F0050A84E /* Onboarding.xib */,
 				578D323E223456000050A84E /* Profile.xib */,
-				1DB004402234D49B00E247B6 /* CompanyCollectionCellView.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -187,10 +190,11 @@
 				1D3F6C4822345219008B1AC3 /* ArScannerViewController.xib in Resources */,
 				1D3F6C4422344932008B1AC3 /* Launch Screen.storyboard in Resources */,
 				578D32502234E1B80050A84E /* Nunito-Regular.ttf in Resources */,
+				1DB0044B22350D5A00E247B6 /* ExploreHeaderView.xib in Resources */,
 				578D3240223456000050A84E /* Profile.xib in Resources */,
 				578D3244223456FB0050A84E /* Company.xib in Resources */,
-				1DB004412234D49B00E247B6 /* CompanyCollectionCellView.xib in Resources */,
 				1D54C6B2223438C900E0C172 /* ExploreViewController.xib in Resources */,
+				1DB004492235010800E247B6 /* CompanyCollectionViewCell.xib in Resources */,
 				578D32482234574F0050A84E /* Onboarding.xib in Resources */,
 				1D54C69F223425BB00E0C172 /* Assets.xcassets in Resources */,
 			);
@@ -203,11 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB004432234E09F00E247B6 /* CompanyCollectionCellView.swift in Sources */,
 				1D3F6C4722345219008B1AC3 /* ArScannerViewController.swift in Sources */,
 				578D323F223456000050A84E /* Profile.swift in Sources */,
 				1D54C6B1223438C900E0C172 /* ExploreViewController.swift in Sources */,
 				578D32472234574F0050A84E /* Onboarding.swift in Sources */,
+				1DB004462234F18800E247B6 /* CompanyCollectionViewCell.swift in Sources */,
 				1D54C69D223425B900E0C172 /* EcoHack.xcdatamodeld in Sources */,
 				1D54C695223425B900E0C172 /* AppDelegate.swift in Sources */,
 				578D3243223456FB0050A84E /* Company.swift in Sources */,

@@ -16,8 +16,8 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var companyCollection: UICollectionView!
     
-    let cellIdentifier = "CompanyCollectionCellView"
-    let companyNum = 2
+    let cellIdentifier = "CompanyCollectionViewCell"
+    let companyNum = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,11 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         companyCollection.dataSource = self
         let nibCell = UINib(nibName: cellIdentifier, bundle: nil)
         companyCollection.register(nibCell, forCellWithReuseIdentifier: cellIdentifier)
+        let headerView = UINib(nibName: "ExploreHeaderView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+        companyCollection.addSubview(headerView)
+        companyCollection.contentInset.top = 180
+    
+        headerView.frame = CGRect(x: 0,y: -180, width: companyCollection.frame.size.width, height: 180)
     }
         
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -35,35 +40,20 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
         return companyNum
     }
     
-    /*func collectionView(_ collectionView: UICollectionView,
-    layout collectionViewLayout: UICollectionViewLayout,
-    insetForSectionAt section: Int) -> UIEdgeInsets {
-    let inset = 6
-    return UIEdgeInsets(top: CGFloat(inset), left: CGFloat(inset), bottom: CGFloat(inset), right: CGFloat(inset))
-    }*/
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: 350, height: 450)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CompanyCollectionCellView
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CompanyCollectionViewCell
+        cell.informationView.translatesAutoresizingMaskIntoConstraints = false
+        if (indexPath.item % 2 != 0) {
+            cell.informationView.trailingAnchor.constraint(equalTo: cell.companyImage.trailingAnchor).isActive = true
+        } else {
+            cell.informationView.leadingAnchor.constraint(equalTo: cell.companyImage.leadingAnchor).isActive = true
+        }
         return cell
         }
     
-    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
-    /*let cell = collectionView.cellForItem(at: indexPath)
-    cell?.backgroundColor = UIColor(red: 53/255, green: 178/255, blue: 52/255, alpha: 1)
-    }
-    
-    // change background color when user touches cell
-    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-    let cell = collectionView.cellForItem(at: indexPath)
-    cell?.backgroundColor = UIColor.gray
-    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     // handle tap events
-    print("You selected cell #\(indexPath.item)!")*/
+    print("You selected cell #\(indexPath.item)!")
 
     }
 }
