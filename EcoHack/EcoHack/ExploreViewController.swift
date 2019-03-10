@@ -42,7 +42,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CompanyCollectionViewCell
-        cell.informationView.translatesAutoresizingMaskIntoConstraints = false
+        //set the labels and other things here when time
         if (indexPath.item % 2 != 0) {
             cell.informationView.trailingAnchor.constraint(equalTo: cell.companyImage.trailingAnchor).isActive = true
         } else {
