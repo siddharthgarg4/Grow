@@ -38,7 +38,7 @@ We also thought that having goals to work towards to be more eco-friendly would 
 
 
 
-## What's next for BlindSight
+## What's next for Grow
 
 **Android App** - to increase user base
 
