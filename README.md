@@ -1,6 +1,6 @@
 # Grow
 
-![image](http://u.cubeupload.com/coding_ninja24/growMerged.jpg)
+![Grow](/resources/grow-cover.png?raw=true"Grow")
 
 ## Project Description
 
